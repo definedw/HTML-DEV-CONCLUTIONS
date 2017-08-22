@@ -36,20 +36,20 @@ Here is the result of my attempt.
 * higher
 
 
-```text
--- container
-    -- header
-        // only sign {hd},if nest more than two pair
-        --hd-{block} || hd-{block}&&{modify}
-            // only sign {head},if more than three pair
-            -- head-{block}
-                -- header-{block} || head-{block}&&{modify}
-                -- {modify}
-     -- content
-            -- similar to header
-        -- footer
-            -- similar to header
-```
+    ```text
+    -- container
+        -- header
+            // only sign {hd},if nest more than two pair
+            --hd-{block} || hd-{block}&&{modify}
+                // only sign {head},if more than three pair
+                -- head-{block}
+                    -- header-{block} || head-{block}&&{modify}
+                    -- {modify}
+         -- content
+                -- similar to header
+            -- footer
+                -- similar to header
+    ```
 
 
 ###  Landscape
@@ -57,36 +57,36 @@ Here is the result of my attempt.
 * primary
 
 
-```text
--- container
-    -- left
-    -- middle
-    -- right
-```
+    ```text
+    -- container
+        -- left
+        -- middle
+        -- right
+    ```
 
 * middle
 
 
-```text
--- container
-    -- left
-        -- lt-{block}
-            -- {modify}
-    -- middle
-        -- similar to left
-    -- right
-        -- similar to left
-```
+    ```text
+    -- container
+        -- left
+            -- lt-{block}
+                -- {modify}
+        -- middle
+            -- similar to left
+        -- right
+            -- similar to left
+    ```
 
 * higher
 
 
-```text
--- container
-    -- left
-        // register only sign in header such as {lt}/{left}
-        -- lt-{block}
-            -- {modify}
-```
+    ```text
+    -- container
+        -- left
+            // register unique sign in header such as {lt}/{left}
+            -- lt-{block}
+                -- {modify}
+    ```
 
 
